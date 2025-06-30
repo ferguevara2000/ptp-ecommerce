@@ -2,7 +2,7 @@
 
 export function TopHeaderBar() {
   return (
-    <div className="bg-gray-600 text-white text-sm">
+    <div className="bg-slate-900 text-white text-sm">
       <div className="container mx-auto px-4 flex justify-between items-center h-8">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1 cursor-pointer hover:text-gray-300">
