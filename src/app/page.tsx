@@ -1,6 +1,7 @@
 import { BenefitsSection } from "@/components/home-components/BenefictSection";
 import { HeroSection } from "@/components/home-components/HeroSection";
 import { MainHeader } from "@/components/home-components/MainHeader";
+import { ProductsSection } from "@/components/home-components/ProductSection";
 import { TopHeaderBar } from "@/components/home-components/TopHeaderBar";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <MainHeader />
     <HeroSection />
     <BenefitsSection />
+    <ProductsSection />
     </>
   );
 }
