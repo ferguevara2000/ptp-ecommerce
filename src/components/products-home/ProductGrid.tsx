@@ -7,9 +7,10 @@ export function ProductGrid() {
     {
       title: 'Heavy Duty 22.5" Steel Truck Wheel',
       price: "$289.00",
-      image: "/images/products/heavy-duty.jpeg?height=200&width=200",
+      image: "/images/products/heavy1.jpg?height=200&width=200",
       sku: "TW-22.5-HD",
       labels: ["HOT"],
+      src: "/products/freno-disc-123",
       rating: 5,
     },
     {
@@ -24,14 +25,14 @@ export function ProductGrid() {
     {
       title: "Heavy Duty Air Brake Chamber",
       price: "$124.00",
-      image: "/images/products/heavy-duty.jpeg?height=200&width=200",
+      image: "/images/products/heavy2.png?height=200&width=200",
       sku: "ABC-HD-30",
       rating: 5,
     },
     {
       title: "Diesel Fuel Filter Kit for Cummins ISX",
       price: "$89.00",
-      image: "/images/products/heavy-duty.jpeg?height=200&width=200",
+      image: "/images/products/heavy3.jpg?height=200&width=200",
       sku: "DFF-ISX-KIT",
       labels: ["SALE", "NEW", "HOT"],
       rating: 5,

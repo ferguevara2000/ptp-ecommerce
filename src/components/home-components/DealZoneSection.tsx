@@ -15,10 +15,10 @@ export function DealZoneSection() {
   const products = [
     // puedes reemplazar con tus productos reales
     { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 1", sku: "SKU1", title: "Heavy Duty Exhaust System", ratingCount: 15, ratingValue: 4.6, price: "$1,249.00", badges: [] },
-    { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 2", sku: "SKU2", title: "Steel Truck Wheel", ratingCount: 18, ratingValue: 4.5, price: "$289.00", badges: ["HOT"] },
-    { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 3", sku: "SKU3", title: "LED Headlight", ratingCount: 24, ratingValue: 4.8, price: "$549.00", oldPrice: "$695.00", badges: ["SALE"] },
-    { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 4", sku: "SKU4", title: "Air Brake Chamber", ratingCount: 31, ratingValue: 4.7, price: "$124.00", badges: [] },
-    { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 5", sku: "SKU5", title: "Diesel Fuel Filter", ratingCount: 42, ratingValue: 4.9, price: "$89.00", badges: ["SALE", "NEW", "HOT"] },
+    { image: "/images/products/heavy1.jpg?height=200&width=200", alt: "Product 2", sku: "SKU2", title: "Steel Truck Wheel", ratingCount: 18, ratingValue: 4.5, price: "$289.00", badges: ["HOT"] },
+    { image: "/images/products/heavy2.png?height=200&width=200", alt: "Product 3", sku: "SKU3", title: "LED Headlight", ratingCount: 24, ratingValue: 4.8, price: "$549.00", oldPrice: "$695.00", badges: ["SALE"] },
+    { image: "/images/products/heavy3.jpg?height=200&width=200", alt: "Product 4", sku: "SKU4", title: "Air Brake Chamber", ratingCount: 31, ratingValue: 4.7, price: "$124.00", badges: [] },
+    { image: "/images/products/heavy 4.webp?height=200&width=200", alt: "Product 5", sku: "SKU5", title: "Diesel Fuel Filter", ratingCount: 42, ratingValue: 4.9, price: "$89.00", badges: ["SALE", "NEW", "HOT"] },
     { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 6", sku: "SKU6", title: "Clutch Kit", ratingCount: 19, ratingValue: 4.4, price: "$399.00", badges: [] },
     { image: "/images/products/heavy-duty.jpeg?height=200&width=200", alt: "Product 7", sku: "SKU7", title: "Engine Mount", ratingCount: 23, ratingValue: 4.2, price: "$159.00", badges: ["HOT"] },
   ];

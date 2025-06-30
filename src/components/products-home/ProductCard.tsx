@@ -1,5 +1,4 @@
-"use client";
-
+import Link from "next/link";
 import { Star, Maximize2, ShoppingCart as CartIcon } from "lucide-react";
 import Image from "next/image";
 
@@ -12,6 +11,7 @@ interface ProductCardProps {
   oldPrice?: string;
   rating?: number;
   reviews?: number;
+  src?: string
 }
 
 export function ProductCard({
@@ -22,18 +22,22 @@ export function ProductCard({
   labels = [],
   oldPrice,
   rating = 5,
+  src
 }: ProductCardProps) {
   return (
     <div className="bg-white border rounded-lg p-4 hover:shadow-lg transition-shadow">
       <div className="relative mb-4">
-        <Image
-  src={image}
-  alt={title}
-  width={300}
-  height={300}
-  className="w-full h-48 object-contain"
-/>
-        <div className="absolute top-2 left-2 flexpace-y-1">
+        <Link href={`${src}`}>
+          <Image
+            src={image}
+            alt={title}
+            width={300}
+            height={300}
+            className="w-full h-48 object-contain cursor-pointer"
+          />
+        </Link>
+
+        <div className="absolute top-2 left-2 flex space-y-1">
           {labels.map((label, idx) => (
             <span
               key={idx}
@@ -54,8 +58,13 @@ export function ProductCard({
           <span className="text-white text-xs">✓</span>
         </div>
       </div>
+
       <div className="text-sm text-gray-500 mb-1">SKU: {sku}</div>
-      <h3 className="font-semibold mb-2">{title}</h3>
+
+      <Link href={`/product/${sku}`}>
+        <h3 className="font-semibold mb-2 cursor-pointer hover:text-red-500">{title}</h3>
+      </Link>
+
       <div className="flex items-center mb-2">
         <div className="flex text-yellow-400">
           {[...Array(rating)].map((_, i) => (
@@ -63,6 +72,7 @@ export function ProductCard({
           ))}
         </div>
       </div>
+
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           {oldPrice && (

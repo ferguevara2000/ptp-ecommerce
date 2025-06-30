@@ -4,6 +4,7 @@ import { ShoppingCart, User, Search } from "lucide-react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { MenuSheet } from "../common/MenuDrawer";
+import Link from "next/link";
 
 export function MainHeader() {
   return (
@@ -17,6 +18,7 @@ export function MainHeader() {
 
             {/* Logo */}
             <div className="flex items-center gap-2 sm:gap-3">
+              <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/images/logo-azul.png"
                 alt="Planet Truck Logo"
@@ -33,6 +35,7 @@ export function MainHeader() {
                 className="object-contain sm:w-[110px] md:w-[130px]"
                 priority
               />
+              </Link>
             </div>
           </div>
 
